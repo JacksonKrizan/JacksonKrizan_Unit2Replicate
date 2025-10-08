@@ -384,17 +384,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bbc50639605408a87c657806a22f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  enemyPrefab: {fileID: 7980374240513279410, guid: 162a6f5b3ad62f64da5bc941ea0f6df2, type: 3}
+  enemyPrefab: {fileID: 7906074318559272693, guid: 3026420516723427d8ebfc20def8fcf9, type: 3}
   enemyPos1: {x: -2, y: -3, z: 0}
-  gemPrefab: {fileID: 5525099372878954818, guid: 07ce2acf935ce8f4a97fa1c49d867582, type: 3}
+  gemPrefab: {fileID: 4665799243487082888, guid: 48be50e1bba634ffead31f2345a5ad61, type: 3}
   gemPosList:
   - {x: -3, y: 4, z: 0}
   - {x: 3, y: -4, z: 0}
   - {x: 2, y: -1, z: 0}
   - {x: -3, y: 2, z: 0}
   - {x: 4, y: 0, z: 0}
-  timer: 0
+  score: 0
 --- !u!1 &2112304735
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,10 +499,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242e4cba5afd941f09ca5eedd585a8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upDirection: {x: 0, y: 0.1, z: 0}
-  downDirection: {x: 0, y: -0.1, z: 0}
-  leftDirection: {x: 0.1, y: 0, z: 0}
-  rightDirection: {x: -0.1, y: 0, z: 0}
+  upDirection: {x: 0, y: 0.05, z: 0}
+  downDirection: {x: 0, y: -0.05, z: 0}
+  leftDirection: {x: -0.05, y: 0, z: 0}
+  rightDirection: {x: 0.05, y: 0, z: 0}
   gameManager: {fileID: 1240068228}
 --- !u!212 &2112304739
 SpriteRenderer:

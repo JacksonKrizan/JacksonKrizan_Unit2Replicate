@@ -27,29 +27,28 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<Transform>().position += downDirection;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
             GetComponent<Transform>().position += leftDirection;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.D))
         {
             GetComponent<Transform>().position += rightDirection;
         }
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Gem")
+        if (collision.gameObject.CompareTag("Gem"))
         {
-            gameManager.GetComponent<GameManagerScript>().score += 1;
             Destroy(collision.gameObject);
+            Debug.Log(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            // Handle enemy collision (e.g., reduce player health or end game)
         }
-    
     }
 }
